@@ -5,4 +5,4 @@ var message = '';
 sayHello("Dipesh");
 console.log(module);
 console.log(global);
-console.log(global.message);
+console.log(global.message); //It will get undefined
