@@ -1,4 +1,4 @@
-const logger = require("./logger");
+const log = require("./logger");
 // function sayHello(name){
 //   console.log("Hello",name);
 // }
@@ -8,5 +8,5 @@ const logger = require("./logger");
 // console.log(global);
 // console.log(global.message); //It will get undefined
 
-console.log(logger);
-logger.log("Its working fine dude!");
+console.log(log);
+log("Its working fine dude!");
