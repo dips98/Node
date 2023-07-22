@@ -1,4 +1,4 @@
-var logger = require("./logger");
+const logger = require("./logger");
 // function sayHello(name){
 //   console.log("Hello",name);
 // }
