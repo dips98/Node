@@ -1,12 +1,10 @@
-const log = require("./logger");
-// function sayHello(name){
-//   console.log("Hello",name);
-// }
-// var message = '';
-// sayHello("Dipesh");
-// console.log(module);
-// console.log(global);
-// console.log(global.message); //It will get undefined
+const Logger = require("./logger");
+const EventEmmiters = require('events');
+const emmiter = new EventEmmiters();
 
-console.log(log);
-log("Its working fine dude!");
+const logger = new Logger();
+logger.on('messagelogged',(arg)=>{
+    console.log(arg,"Its get listened");
+});
+
+logger.log("Dipesh");
