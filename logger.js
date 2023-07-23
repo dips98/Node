@@ -1,10 +1,11 @@
+const EventEmmiters = require("events");
 
-console.log(__filename);
-console.log(__dirname);
-var url = 'http:/login.io/loggedin';
 
-function log(message){
-    console.log(message);
+class Logger extends EventEmmiters {
+    log(message) {
+        console.log("Hello", message);
+        this.emit('messagelogged', { name: "Dipesh", Age: 25 });
+    }
 }
 
-module.exports = log;
+module.exports = Logger;
