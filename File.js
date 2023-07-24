@@ -4,4 +4,4 @@ data = {
 }
 console.log(data);
 console.log(data.a);
-console.log();
+console.log(data.b);
