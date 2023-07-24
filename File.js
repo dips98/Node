@@ -6,4 +6,3 @@ console.log(data);
 console.log(data.a);
 console.log(data.b);
 console.log(a);
-
