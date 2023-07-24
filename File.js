@@ -3,3 +3,4 @@ data = {
     b:"b"
 }
 console.log(data);
+console.log(data.a);
